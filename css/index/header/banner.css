@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+:root{
+  --brand_color:pink;
+}
+a {
+	text-decoration:none; 
+	color:inherit; 
+}
+
+header {
+  width: 100%;
+  height: 139px;
+  display: flex;
+  flex-direction: column; /* column으로 반전상태 부여 */
+  align-items: center; /* column으로 인한 반전 상태 가로줄 정렬 */
+  /* justify-content:center; // column으로 인한 반전 상태 세로 줄 정렬 */
+  background-color: pink;
+}
+#top_wrap {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center; /* 가로줄 정렬 */
+}
+.cat_layout {
+  width: 1903px;
+  display: flex; /* flex속성부여로 부가 적인 속성들을 부여할수있음 */
+  align-items: center; /* 세로줄 정렬 */
+  justify-content: space-between; /* 아이템 사이사이 마다 flex 공간 부여 */
+  background-color:#fafafa;
+}
+
+.brand_logo {
+	margin-left:20px;
+	filter:invert(98%);
+}
+
+.brand_name {
+	font-size:40px;
+	font-weight:bold;
+	color:var(--brand_color);
+}
